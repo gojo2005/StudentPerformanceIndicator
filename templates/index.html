@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Prediction System</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 950px;
+            background: white;
+            padding: 50px;
+            border-radius: 18px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e3c72;
+            margin-bottom: 20px;
+            font-size: 2.8rem;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #555;
+            font-size: 1.2rem;
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            color: #2a5298;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #444;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-left: 25px;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: #1e3c72;
+            color: white;
+            padding: 14px 30px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #16315d;
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 25px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        @media(max-width:768px) {
+            .container {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Performance Prediction System</h1>
+
+        <p class="subtitle">
+            An End-to-End Machine Learning Application for Predicting Student Mathematics Performance
+        </p>
+
+        <h2>Project Overview</h2>
+
+        <p>
+            The Student Performance Prediction System is a machine learning-based web application
+            designed to estimate a student's Mathematics score using demographic, educational,
+            and academic attributes. The system utilizes historical student performance data
+            and applies machine learning techniques to generate accurate predictions.
+        </p>
+
+        <p>
+            Users provide information such as gender, ethnicity, parental level of education,
+            lunch type, test preparation status, reading score, and writing score. Based on
+            these inputs, the trained machine learning model predicts the expected Mathematics score.
+        </p>
+
+        <h2>Machine Learning Pipeline</h2>
+
+        <ul>
+            <li>Data Ingestion and Data Validation</li>
+            <li>Feature Engineering and Data Preprocessing</li>
+            <li>Categorical Feature Encoding</li>
+            <li>Feature Scaling and Transformation</li>
+            <li>Model Training and Evaluation</li>
+            <li>Prediction Pipeline Deployment using Flask</li>
+        </ul>
+
+        <h2>Technology Stack</h2>
+
+        <ul>
+            <li>Python</li>
+            <li>Scikit-Learn</li>
+            <li>Flask</li>
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>HTML & CSS</li>
+            <li>Machine Learning Pipelines</li>
+        </ul>
+
+        <h2>Objective</h2>
+
+        <p>
+            The primary objective of this project is to demonstrate the complete lifecycle of a
+            machine learning application, from data preprocessing and model development to
+            deployment and user interaction through a web interface.
+        </p>
+
+        <div class="btn-container">
+            <a href="/predictdata" class="btn">
+                Launch Prediction System
+            </a>
+        </div>
+
+        <div class="footer">
+            Built using Flask, Scikit-Learn and Machine Learning Pipelines
+        </div>
+
+    </div>
+
+</body>
+
+</html>
